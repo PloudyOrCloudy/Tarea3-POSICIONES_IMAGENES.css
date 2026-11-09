@@ -6,22 +6,26 @@ html {
 body {
     position: relative;
     display: flex;
+    flex-wrap: nowrap;
     align-items: stretch;
     box-sizing: content-box;
-    width: 498px;
+    width: 600px;
     height: 193px;
     margin: 14px 0 0 30px;
     overflow: hidden;
     border: 1px solid #999;
 }
 
-img:first-child {
-    display: none;
-}
-
-img:not(:first-child) {
+body img {
     flex: 0 0 46.66px;
     width: 46.66px;
     height: 193px;
     object-fit: fill;
+    transition: flex-basis 0.3s ease, width 0.3s ease;
 }
+
+body img:hover {
+    flex-basis: 300px;
+    width: 300px;
+}
+    
