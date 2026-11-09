@@ -1,0 +1,27 @@
+html {
+    min-height: 100%;
+    background: url("fondomarmol.jpg") center / cover fixed;
+}
+
+body {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    box-sizing: content-box;
+    width: 498px;
+    height: 193px;
+    margin: 14px 0 0 30px;
+    overflow: hidden;
+    border: 1px solid #999;
+}
+
+img:first-child {
+    display: none;
+}
+
+img:not(:first-child) {
+    flex: 0 0 46.66px;
+    width: 46.66px;
+    height: 193px;
+    object-fit: fill;
+}
